@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+      crossorigin="anonymous"
+    />
+    <title>Veilles EthersJS</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-center my-5 pt-3  font-weight-bold">Veilles EtherJS</h1>
+      <div class="container col-8 offset-2 p-0 ">
+        <div
+          id="cadredate"
+          class="bg-primary  p-3 mb-4 text-center text-light font-weight-bold rounded-sm"
+        ></div>
+
+        <!-- Début CHECKBOX -->
+        <section class="row">
+          <div class="col-lg-6  ">
+            <div class="input-group mb-4">
+              <div class="input-group-text">
+                <input
+                  id="mycheck"
+                  class="form-check-input"
+                  type="checkbox"
+                  id="textdedans"
+                />
+              </div>
+              <label class="form-control" for="textdedans"
+                >Afficher uniquement des veilles à venir</label
+              >
+            </div>
+          </div>
+
+          <!-- Fin CHECKBOX -->
+
+          <!-- Début Custom select "Trier par date" -->
+
+          <div class="col-lg-6">
+            <div class="input-group mb-4">
+              <label class="input-group-text" for="inputGroupSelect01"
+                >Trier</label
+              >
+              <select
+                class="form-select"
+                id="filteralphadate"
+                name="filteralphadate"
+              >
+                <option value="1" selected>par date</option>
+                <option value="2">De A à Z</option>
+                <option value="3">De Z à A</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Fin Custom select "Trier par date" -->
+
+          <!-- Début Custom select "Catégories" -->
+          <div class="col-lg-6 ">
+            <div class="input-group mb-4 ">
+              <label class="input-group-text" for="categ">Catégories</label>
+              <select class="form-select" id="categ">
+                <option selected>Toutes</option>
+              </select>
+            </div>
+          </div>
+        </section>
+        <!-- Fin Custom select "Catégories" -->
+      </div>
+    </header>
+    <main id="debut">
+      <div></div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <script src="https://momentjs.com/downloads/moment-with-locales.min.js"></script>
+    <script src="veilles.js"></script>
+    <script src="script.js"></script>
+    <!--<script src="tridatealpha.js"></script>-->
+  </body>
+</html>
